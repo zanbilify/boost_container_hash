@@ -1,0 +1,19 @@
+[package]
+name = "boost_container_hash"
+description = "Boost C++ library boost_container_hash packaged using Zanbil"
+version = "0.1.0"
+edition = "2024"
+links = "boost_container_hash"
+license = "BSL-1.0"
+repository = "https://github.com/zanbilify/boost_container_hash"
+
+[package.metadata.zanbil]
+make_dependencies_public = true
+
+[dependencies]
+boost_config = { version = "0.1.0", path = "../boost_config" }
+boost_describe = { version = "0.1.0", path = "../boost_describe" }
+boost_mp11 = { version = "0.1.0", path = "../boost_mp11" }
+
+[build-dependencies]
+zanbil-boost-build = "0.1.0"
